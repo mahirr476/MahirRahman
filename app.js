@@ -1,3 +1,7 @@
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
 // LANDING PAGE ANIMATIONS
 
 const HeaderBox = document.querySelector('.HeaderBox');
@@ -28,8 +32,8 @@ t1.fromTo(HeaderBox,2, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
 
 // ABOUT PAGE ANIMATIONS
 const AboutBox = document.querySelector(".AboutBox");
-const proPic =document.querySelector(".proPic")
-const AboutInfo =document.querySelector(".AboutInfo");
+const proPic = document.querySelector(".proPic")
+const AboutInfo = document.querySelector(".AboutInfo");
 
 
 const t2 = new TimelineMax();
@@ -38,15 +42,15 @@ const t4 = new TimelineMax();
 
 
 function AboutAnimate() {
-    t2.fromTo(AboutBox,2, {height: "0%",x: "0%", width: "100%"}, {height: "20vh", x:"13%", width: "80%", ease: Power2.easeInOut})
+    t2.fromTo(AboutBox,2, {height: "0%",x: "0%", width: "100%"}, {height: "20vh", x:"12%", width: "80%", ease: Power2.easeInOut})
     t3.fromTo(AboutInfo, 2, {x: 900}, {x: 0, ease: Power2.easeInOut})
     t4.fromTo(proPic, 2, {x: -900}, {x: 0, ease: Power2.easeInOut});
 }
 
 // EXPERIENCE PAGE ANIMATIONS
-const EducBox = document.querySelector(".AboutBox");
-const EducPic =document.querySelector(".proPic")
-const EducInfo =document.querySelector(".AboutInfo");
+const EducBox = document.querySelector(".EducBox");
+const EducPic = document.querySelector(".EducPic")
+const EducInfo = document.querySelector(".EducInfo");
 
 
 
@@ -55,8 +59,25 @@ const e3 = new TimelineMax();
 const e4 = new TimelineMax(); 
 
 function ExAnimate() {
-    e2.fromTo(EducBox,2, {height: "0%",x: "0%", width: "50%"}, {height: "85vh", x:"15%", width: "80%", ease: Power2.easeInOut})
-    e3.fromTo(EducInfo, 2, {x: 900}, {x: 0, ease: Power2.easeInOut})
+    e2.fromTo(EducBox,2, {height: "0%",x: "0%", width: "50%"}, {height: "85vh", x:"12%", width: "80%", ease: Power2.easeInOut})
+    e3.fromTo(EducInfo, 2, {y: 1000}, {y: 0, ease: Power2.easeInOut})
     e4.fromTo(EducPic, 2, {x: -900}, {x: 0, ease: Power2.easeInOut});
+}
+
+
+// SOCIAL PAGE ANIMATIONS
+const SocialBox = document.querySelector(".SocialBox");
+const SocialPic = document.querySelector(".SocialPic")
+const SocialInfo = document.querySelector(".SocialInfo");
+
+
+const s2 = new TimelineMax();
+const s3 = new TimelineMax();
+const s4 = new TimelineMax(); 
+
+function SocAnimate() {
+    e2.fromTo(SocialBox,2, {height: "0%",x: 500, width: "50%"}, {height: "85vh", x: "12%", width: "80%", ease: Power2.easeInOut})
+    e3.fromTo(SocialInfo, 2, {x: 900}, {x: 0, ease: Power2.easeInOut})
+    e4.fromTo(SocialPic, 2, {x: -900}, {x: 0, ease: Power2.easeInOut});
 }
 

@@ -136,6 +136,7 @@ section {
     z-index: 3;
     color: black;
     text-decoration-line: underline;
+    text-decoration-thickness: 3px;
     
 }
 
@@ -208,6 +209,10 @@ section {
     height: 100%;
     position: relative;
 }
+.AboutBox h2 { 
+    color: white;
+
+}
 
 .AboutBox {
     overflow: hidden;
@@ -221,9 +226,8 @@ section {
     left:0%;
     width: 100%;
     height: 20vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 64, 148, 0.9);
     z-index: 1;
-    color: black;
     padding:  0px 0px;
     align-items: center;
 }
@@ -231,8 +235,8 @@ section {
 
 .AboutArrow {
     grid-column: 3/4;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 60px;
     cursor: pointer; 
     justify-self: center;
     align-self: center;
@@ -244,8 +248,8 @@ section {
 }
 .AboutArrow img { 
     width: 50px;
-    height: 50px;
-    padding-bottom: 10px;
+    height: 60px;
+    padding: 10px 10px;
 }
 
 .proPic img {
@@ -262,7 +266,7 @@ section {
 }
 
 .AboutInfo { 
-    background-color: rgba(0, 64, 148, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
     width: 59%;
     height: 35vh; 
     top: 50%;
@@ -279,7 +283,7 @@ section {
     line-height: 190%; 
     font-family: 'Montserrat', sans-serif;
     text-align: right;
-    color: white;
+    color: black;
   
 }
 
@@ -287,7 +291,7 @@ ul {
     list-style: none;
 }
 
-/* Experience PAGE */ 
+/* EXPERIENCE PAGE */ 
 
 
 .EducContainer {
@@ -301,28 +305,34 @@ ul {
     position: absolute;
     display: grid;
     grid-template-columns: 15% 1fr 1fr 0%;
-    justify-content:flex-start;
-    align-content: center;
-    justify-self: flex-end;
-    top:10%;
+    justify-content:center;
+    justify-self: center;
+    top:20%;
     left:0%;
-    width: 85vw;
+    width: 100%;
     height: 85vh;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1;
     color: black;
-    padding:  0px 50px;
+    padding:  70px 0px;
     align-items: center;
 }
 
+.EducBox .headline { 
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding:  50px 0px;
 
-.EducArrow {
+}
+
+
+.AboutArrow {
     grid-column: 3/4;
     width: 20px;
     height: 20px;
     cursor: pointer; 
     justify-self: center;
-    align-self: center;
+    align-self: flex-start;
     z-index: 4;   
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
@@ -350,16 +360,16 @@ ul {
 
 .EducInfo { 
     background-color: rgba(0, 64, 148, 0.9);
-    width: 50vw;
-    height: 32.5vh; 
-    top: 30%;
+    width: 59%;
+    height: 35vh; 
+    top: 50%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     left: 30%; 
     padding-top: 5vh; 
-    padding-right: 35vh;
+    padding-right: 5vh;
     padding-left: 10vw;
     padding-bottom: 5vh; 
     font-size: 0.9vw;
@@ -367,11 +377,102 @@ ul {
     font-family: 'Montserrat', sans-serif;
     text-align: right;
     color: white;
+    z-index: 10;
   
 }
 
 ul { 
     list-style: none;
+}
+
+
+/* SOCIAL PAGE */ 
+
+
+.SocialContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.SocialBox {
+    overflow: hidden;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 0%;
+    justify-content:center;
+    justify-self: center;
+    top:20%;
+    left:0%;
+    width: 100%;
+    height: 85vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    color: black;
+    padding:  70px 0px;
+    align-items: center;
+}
+
+.SocialBox .headline { 
+    justify-self: flex-start;
+    align-self: flex-start;
+    padding:  50px 0px;
+
+}
+
+
+.AboutArrow {
+    grid-column: 3/4;
+    width: 20px;
+    height: 20px;
+    cursor: pointer; 
+    justify-self: center;
+    align-self: flex-start;
+    z-index: 4;   
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+ 
+}
+.AboutArrow img { 
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.SocialPic img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.SocialPic { 
+    border-radius: 50%;
+    position: absolute;
+    top: 30%; 
+    left: 12%
+}
+
+.SocialInfo { 
+    background-color: rgba(0, 64, 148, 0.9);
+    width: 59%;
+    height: 35vh; 
+    top: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    left: 30%; 
+    padding-top: 5vh; 
+    padding-right: 5vh;
+    padding-left: 10vw;
+    padding-bottom: 5vh; 
+    font-size: 0.9vw;
+    line-height: 190%; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    color: white;
+    z-index: 10;
 }
 
 
