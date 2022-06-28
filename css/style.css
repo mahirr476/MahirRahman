@@ -9,13 +9,14 @@ html {
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth !important;
+    width: 100%;
 }
 a { 
     text-decoration: none;
-    color: white;
+
 }
 body {
-    background-color: #121212;
+    background: rgba(12,12,12, 1);
 }
 
 .slider { 
@@ -24,7 +25,7 @@ body {
     height: 100vh; 
     top:0;
     left: 0;
-    background: black;
+    background: rgba(12,12,12, 1);
     z-index: -1;
     scroll-behavior: smooth;
  }
@@ -33,17 +34,16 @@ body {
  nav {
     position: fixed;
     display: grid;
-    grid-template-columns: 12% 1fr 1fr 12%; 
+    grid-template-columns: 12% 1fr 1fr 7.5%; 
     justify-content: center;
     width: 100%;
     color: white;
     justify-items: flex-start;
     align-items: center;
-    margin-top: 20px;
-    z-index: 500;
+    z-index: 500000;
     width: 100%;
     padding: 1% 0;
-    background-color: rgb(12, 12, 12);
+    background-color: rgba(255, 255, 255, 1);
 }
 
  #logo { 
@@ -52,7 +52,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     align-self: flex-end;
     line-height: 150%;
-    color: white;
+}
+
+#logo h3 {
+    padding: 0;
+    color: black;
 }
 
 .tabs {
@@ -61,12 +65,12 @@ body {
     flex-direction: row;
     width: 100%;
     height: auto;
-    color: white;
+    color: black;
     text-align: right;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     justify-content: flex-start;
-    padding: 10px 10px;
+    padding: 0px 10px;
  
 }
 
@@ -81,12 +85,16 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: center ;
-    justify-items: center;
+    align-self: center;
 }
 
 .tabs a {
     text-align: center;
+    color:black;
+    font-size: 12px;
+    font-weight: 1000;
 }
+
 
 /* LANDING PAGE */
 
@@ -103,19 +111,19 @@ section {
     position: absolute;
     top: 20%;
     left: 0;
-    padding: 0 40px;
+    padding: 0 0px;
 }
 
 .HeaderBox img { 
-    width: 100%;
-    height: 95%; 
+    width: 105%;
+    height: 95.5%; 
     object-fit: cover;
 }
  
 .HeaderBox::after { 
     content: "";
     background: black;
-    width: 100%; 
+    width: 105%; 
     height: 95%; 
     position: absolute; 
     left: 0; 
@@ -127,16 +135,14 @@ section {
 .headline { 
     grid-column: 2/4;
     position: absolute; 
-    width: 100%;
+    width: 50%;
     align-self: center;
     left: 0%;
-    font-size: 60px; 
+    font-size: 3em; 
     font-weight: 300;
     font-family: 'Montserrat', sans-serif;
     z-index: 3;
     color: black;
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
     
 }
 
@@ -148,24 +154,26 @@ section {
  }
 
  .subH h2 { 
-    margin: 50px;
+    margin: 15px 0;
     color: black;
-    font-weight:900;
+    font-weight: 900;
 }
 
 .downArrow {
     grid-column: 3/4;
-    width: 50px;
-    height: 50px;
     cursor: pointer; 
-    justify-self: center;
+    justify-self: flex-start;
     align-self: center;
-    margin-top: 0vh;
+    margin-top: 10%;
     z-index: 4;   
-    margin-bottom: 5px;
 	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
-	animation: pulse 2s infinite;
+	animation: pulse 3s infinite;
+}
+
+.downArrow img { 
+    width: 30px; 
+    height: 30px;
 }
 
 @keyframes pulse {
@@ -174,7 +182,7 @@ section {
 	}
 
 	70% {
-		transform: scale(1.3);
+		transform: scale(1.2);
 	}
 
 	100% {
@@ -182,18 +190,17 @@ section {
 	}
 }
 
-
-
 .Hone {
     overflow: hidden;
     position: absolute;
     display: grid;
-    grid-template-columns: 0% 2fr 1.5fr 1.5fr 0%;
+    grid-template-columns: 0% 2fr 1fr 1fr 0%;
     justify-content:flex-start;
     align-content: center;
-    top:55%;
-    left:0;
-    width: 100%;
+    top:58%;
+    left:0%;
+    width: 105%;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 1;
     color: black;
@@ -201,279 +208,199 @@ section {
     align-items: baseline;
 }
 
+/* ABOUT PAGE ------------------------------------------------------------------------------------------------------------------------------- */
 
-/* ABOUT PAGE */
-
-.aboutContainer {
-    width: 100%;
-    height: 100%;
+.AboutPage { 
     position: relative;
-}
-.AboutBox h2 { 
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: 20%;
+    width: 100%; 
+    height: auto;
     color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.symbols img {
+    width: 7%;
 
 }
 
-.AboutBox {
-    overflow: hidden;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr 0%;
-    justify-content:center;
-    align-content: center;
-    justify-self: center;
-    top:20%;
-    left:0%;
-    width: 100%;
-    height: 20vh;
-    background-color: rgba(0, 64, 148, 0.9);
-    z-index: 1;
-    padding:  0px 0px;
+.symbols {
+    width: 80%;
+    margin-top: 8%;
+    display: flex; 
+    justify-content: space-around;
     align-items: center;
 }
 
-
-.AboutArrow {
-    grid-column: 3/4;
-    width: 50px;
-    height: 60px;
-    cursor: pointer; 
-    justify-self: center;
-    align-self: center;
-    z-index: 4;   
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
- 
-}
-.AboutArrow img { 
-    width: 50px;
-    height: 60px;
-    padding: 10px 10px;
-}
-
-.proPic img {
-    width: 300px;
-    height: 300px;
-    border-radius: 0%;
-}
-
-.proPic { 
-    border-radius: 50%;
-    position: absolute;
-    top: 50%; 
-    left: 12.5%
-}
-
-.AboutInfo { 
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 59%;
-    height: 35vh; 
-    top: 50%;
-    position: absolute;
+.aboutInfo {
+    width: 80%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: flex-end;
-    left: 30%; 
-    padding-top: 5vh; 
-    padding-right: 5vh;
-    padding-left: 10vw;
-    padding-bottom: 5vh; 
-    font-size: 0.9vw;
-    line-height: 190%; 
-    font-family: 'Montserrat', sans-serif;
-    text-align: right;
+    
+    margin-top: 3%;
+    font-size: 0.8em;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.aboutInfo p {
+    padding: 2%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.ExpPage { 
+    position: relative;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    top: 60%;
+    width: 100%; 
+    height: auto;
     color: black;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 20px;
+}
+
+.Arrow img {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0;
+}
+.Arrow a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pulse 3s infinite;
+    width: auto;
+    height: auto;
+}
+
+
+
+.Arrow {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 20px;
+}
+
+.ExpPage h5 {
+    padding: 10px 0;
+    font-size: 1.5em;
+    margin: 20px 0;
+    margin-bottom: 50px;
+}
+
+.expInfo{
+    width: 80%;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(12,12,12, 0.9);
+    color: whitesmoke;
+    padding: 50px 100px;
+    margin-top: 1px;
+    border-radius: 10px;
+    height: auto;
+    flex-direction: column;
+}
+
+.expInfo .Java {
+    margin-top: 10px;
+}
+
+.expInfo .p3 {
+    margin-top: 30px;
+}
+.expInfo .web {
+    margin-top: 30px;
+}
+
+.Java, .p3, .web,  h3 {
+    color:whitesmoke;
+    padding:10px 0px;
+
+}
+
+.expInfo h4 {
+    font-size: 0.7em;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: baseline;
+    background-color: black;
+    line-height: 2em;
+    font-family: 'Anek Latin', sans-serif;
+    text-align: left;
+}
+
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
   
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
+
+  /*----------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    .subH { 
+        display: none;
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .tabs {
+        margin-top: 5px;
+        grid-column: 2/4;
+        font-size: 8px;
+    }
+
+    .downArrow { 
+        margin-top: 70%;
+        justify-self: center;
+        align-self: flex-end;
+        grid-column: 4/4;
+    }
+
+    .Arrow {
+        display: none;
+    }
 }
-
-ul { 
-    list-style: none;
-}
-
-/* EXPERIENCE PAGE */ 
-
-
-.EducContainer {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.EducBox {
-    overflow: hidden;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr 0%;
-    justify-content:center;
-    justify-self: center;
-    top:20%;
-    left:0%;
-    width: 100%;
-    height: 85vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    color: black;
-    padding:  70px 0px;
-    align-items: center;
-}
-
-.EducBox .headline { 
-    justify-self: flex-start;
-    align-self: flex-start;
-    padding:  50px 0px;
-
-}
-
-
-.AboutArrow {
-    grid-column: 3/4;
-    width: 20px;
-    height: 20px;
-    cursor: pointer; 
-    justify-self: center;
-    align-self: flex-start;
-    z-index: 4;   
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
- 
-}
-.AboutArrow img { 
-    width: 50px;
-    height: 50px;
-    padding-bottom: 10px;
-}
-
-.EducPic img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-}
-
-.EducPic { 
-    border-radius: 50%;
-    position: absolute;
-    top: 30%; 
-    left: 12%
-}
-
-.EducInfo { 
-    background-color: rgba(0, 64, 148, 0.9);
-    width: 59%;
-    height: 35vh; 
-    top: 50%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    left: 30%; 
-    padding-top: 5vh; 
-    padding-right: 5vh;
-    padding-left: 10vw;
-    padding-bottom: 5vh; 
-    font-size: 0.9vw;
-    line-height: 190%; 
-    font-family: 'Montserrat', sans-serif;
-    text-align: right;
-    color: white;
-    z-index: 10;
-  
-}
-
-ul { 
-    list-style: none;
-}
-
-
-/* SOCIAL PAGE */ 
-
-
-.SocialContainer {
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-.SocialBox {
-    overflow: hidden;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 15% 1fr 1fr 0%;
-    justify-content:center;
-    justify-self: center;
-    top:20%;
-    left:0%;
-    width: 100%;
-    height: 85vh;
-    background-color: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-    color: black;
-    padding:  70px 0px;
-    align-items: center;
-}
-
-.SocialBox .headline { 
-    justify-self: flex-start;
-    align-self: flex-start;
-    padding:  50px 0px;
-
-}
-
-
-.AboutArrow {
-    grid-column: 3/4;
-    width: 20px;
-    height: 20px;
-    cursor: pointer; 
-    justify-self: center;
-    align-self: flex-start;
-    z-index: 4;   
-	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	transform: scale(1);
-	animation: pulse 2s infinite;
- 
-}
-.AboutArrow img { 
-    width: 50px;
-    height: 50px;
-    padding-bottom: 10px;
-}
-
-.SocialPic img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10%;
-}
-
-.SocialPic { 
-    border-radius: 50%;
-    position: absolute;
-    top: 30%; 
-    left: 12%
-}
-
-.SocialInfo { 
-    background-color: rgba(0, 64, 148, 0.9);
-    width: 59%;
-    height: 35vh; 
-    top: 50%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    left: 30%; 
-    padding-top: 5vh; 
-    padding-right: 5vh;
-    padding-left: 10vw;
-    padding-bottom: 5vh; 
-    font-size: 0.9vw;
-    line-height: 190%; 
-    font-family: 'Montserrat', sans-serif;
-    text-align: right;
-    color: white;
-    z-index: 10;
-}
-
-
-
