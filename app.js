@@ -30,23 +30,17 @@ t1.fromTo(HeaderBox,2, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})
 .fromTo(ubc,6.5,{opacity: 0,x: 3000},{opacity: 1, x:0},{DelayNode:0});
 
 // ABOUT PAGE ANIMATIONS
-const aboutBox = document.querySelector(".aboutBox");
-const proPic = document.querySelector(".proPic")
-const infoBox = document.querySelector(".infoBox");
-const aboutIcons = document.querySelector(".aboutIcons");
-const bdInfo = document.querySelector(".bdInfo");
-const mapInfo = document.querySelector(".mapInfo");
-const noteInfo = document.querySelector(".noteInfo");
-const studyInfo = document.querySelector(".studyInfo");
 
-const t2 = new TimelineMax();
-const t3 = new TimelineMax();
-const t4 = new TimelineMax();
+const image = document.querySelector('.image');
+const nameH = document.querySelector('.nameH');
+const aboutPara = document.querySelector('.aboutPara');
 
+const t2 = new TimelineMax(); 
 
-function AboutAnimate() {
-   
-}
+t2.fromTo(image,4,{opacity: 0,x: 3000},{opacity: 1, x:0},{DelayNode:0})
+.fromTo(nameH,4,{opacity: 0,x: 3000},{opacity: 1, x:0},{DelayNode:0})
+.fromTo(aboutPara,4,{opacity: 0,x: 3000},{opacity: 1, x:0},{DelayNode:0})
+
 
 
 

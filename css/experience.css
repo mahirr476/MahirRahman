@@ -1,0 +1,226 @@
+* { 
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box;
+
+}
+
+html { 
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth !important;
+    width: 100%;
+    height: auto;
+}
+a { 
+    text-decoration: none;
+
+}
+
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+
+@media only screen and (max-width: 720px) {
+    .subH { 
+        display: none;
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .tabs {
+        margin-top: 5px;
+        grid-column: 2/4;
+        font-size: 8px;
+    }
+
+
+    .expArrow {
+        display: none;
+    }
+    .ExpPage h2 {
+        padding-top: 80px;
+    }
+    
+}
+
+ /* NAV BAR */
+ nav {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 12% 1fr 1fr 7.5%; 
+    justify-content: center;
+    width: 100%;
+    color: white;
+    justify-items: flex-start;
+    align-items: center;
+    z-index: 500000;
+    width: 100%;
+    padding: 1% 0;
+    background-color: rgb(0, 124, 155);
+}
+
+ #logo { 
+    grid-column: 2/3;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    align-self: flex-end;
+    line-height: 150%;
+}
+
+#logo h3 {
+    padding: 0;
+    color: black;
+}
+
+.tabs {
+    grid-column: 3/3;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    color: black;
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: flex-start;
+    padding: 0px 10px;
+ 
+}
+
+.tabs a:hover   {
+    color: rgb(0, 204, 255);
+}
+
+
+.tabs div { 
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center ;
+    align-self: center;
+}
+
+.tabs a {
+    text-align: center;
+    color:black;
+    font-size: 12px;
+    font-weight: 1000;
+}
+
+
+
+/* EXPERIENCE PAGE ------------------------------------------------------------------------------------------------------------------------------- */
+
+
+.ExpPage { 
+    position: absolute;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; 
+    top: 20%;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(255, 255, 255, 0.99);
+    height: 200%;
+    margin-bottom: 50px;
+
+}
+
+
+.ExpPage h2 {
+    padding-top: 100px;
+    font-size: 3em;
+    width: 70%;
+    text-align: center;
+    letter-spacing: 0.25em;
+}
+
+.expInfo{
+    width: 80%;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 26, 56, 0.9);
+    color: whitesmoke;
+    padding: 0px 100px;
+    margin: 0px 0;
+    border-radius: 10px;
+    height: auto;
+    flex-direction: column;
+
+}
+
+.expPara { 
+    margin-top: 20px;
+}
+
+.expPara h5 { 
+    text-align: center;
+    font-size: 1.5em;
+    font-style: oblique;
+    background-color: whitesmoke;
+    color: rgb(0, 64, 138);
+    padding-right: 20px;
+    border-radius: 10px;
+}
+
+.expInfo .Java {
+    margin-top: 30px;
+}
+
+.expInfo .p3 {
+    margin-top: 30px;
+}
+.expInfo .web {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.Java, .p3, .web,  h3 {
+    color:whitesmoke;
+    padding:10px 0px;
+
+}
+
+.expInfo h4 {
+    font-size: 0.7em;
+    padding: 10px 0;
+   
+}
+
+.expArrow img { 
+    width: 30%;
+    animation: pulse 1.6s infinite;
+}
+.expArrow a { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.expArrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
