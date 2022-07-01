@@ -42,8 +42,6 @@ t2.fromTo(image,4,{opacity: 0,x: 3000},{opacity: 1, x:0},{DelayNode:0})
 .fromTo(aboutPara,4,{opacity: 0,x: 3000},{opacity: 1, x:0},{DelayNode:0})
 
 
-
-
 // SOCIAL PAGE ANIMATIONS
 
 

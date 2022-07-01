@@ -15,22 +15,24 @@ body {
     background: url('./img/1.jpg');
     background-position: 0 1000px;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 100px;
+
 }
 a { 
    text-decoration: none;
 }
 
 .link  { 
-    color: black;
+    color: white;
     text-decoration: none;
     transition: background 0.5s;
-    border-radius: 10%;
+    border-radius: 1%;
     font-weight: 1000;
 }
 
 .link:hover { 
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 
@@ -79,7 +81,7 @@ a {
 }
 
 .tabs a:hover   {
-    color: rgb(0, 204, 255);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -119,7 +121,7 @@ a {
     }
 
     .logo {
-        font-size: 10px;
+        font-size: 1px;
     }
 
     .tabs {
@@ -157,17 +159,20 @@ a {
     left: 15%;
 top: 20%;
     max-width: 1000px;
-    margin: 0 ; 
-    padding: 0 0rem; 
+    padding: 1rem 0rem; 
     text-align: center;
+    background-color: rgba(12,12,12,0.9);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
+
 
 .image img { 
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 20%;
     border-radius: 50%;
-    box-shadow: 5px 0px 50px 5px #888888;}
+    box-shadow: 5px 0px 50px 5px rgba(12,12,12,0.3);}
 
 .container h2 { 
     
@@ -178,7 +183,7 @@ top: 20%;
 }
 
 .container h3 {
-    color: #777;
+    color: whitesmoke;
 font-size: 2.5rem;
 font-weight: 400;
 }
@@ -189,15 +194,16 @@ p {
     margin: 1rem;
     text-align: center;
     margin-bottom: 2rem;
+    color:white
 }
 
 .btn { 
     display: inline-block;
     padding: 0.7rem 0.5rem; 
-    background-color: rgb(12,12,12);
+    background: rgb(0, 124, 155);
     font-size: 2rem;
     text-decoration: none;
-    color:rgb(172, 255, 255);
+    color:white;
     border-radius: 10px;
     transition: background 0.5s;
     margin-bottom: 1rem;
@@ -205,8 +211,8 @@ p {
 
 
 .btn:hover { 
-    background: rgb(0, 124, 155);
-    color: white;
+    background: rgb(255,255,255);
+    color: rgb(12, 12, 12);
 }
 
 .aboutArrow img { 
