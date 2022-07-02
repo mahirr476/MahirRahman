@@ -4,17 +4,16 @@
 
 const HeaderBox = document.querySelector('.HeaderBox');
 const slider = document.querySelector('.slider');
-const logo = document.querySelector("#logo");
 const headline = document.querySelector(".headline");
-const tabs = document.querySelector(".tabs");
 const subH = document.querySelector(".subH");
 const Hone = document.querySelector(".Hone");
 const downArrow = document.querySelector(".downArrow");
 const arts = document.querySelector(".arts");
 const cs = document.querySelector(".cs");
 const ubc = document.querySelector(".ubc");
+const logo = document.querySelector("#logo");
+const tabs = document.querySelector(".tabs");
 
-const hiddenNav = document.querySelector(".hiddenNav");
 const t1 = new TimelineMax(); 
 
 t1.fromTo(HeaderBox,2, {height: "0%"}, {height: "80%", ease: Power2.easeInOut})

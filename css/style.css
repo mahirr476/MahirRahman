@@ -49,12 +49,13 @@ a {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     align-self: flex-end;
-    line-height: 150%;
 }
 
 #logo h3 {
     padding: 0;
     color: black;
+    line-height: 1.5em !important;
+
 }
 
 .tabs {
@@ -253,4 +254,11 @@ section {
     .aboutInfo {
        
     font-size: 60%;    }
+}
+
+@media only screen and (max-width: 400px) {
+    .downArrow { 
+        display: none;
+    }
+
 }

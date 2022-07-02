@@ -11,6 +11,8 @@ html {
     scroll-behavior: smooth !important;
     width: 100%;
     height: auto;
+    background-color: rgba(12,12,12,0.9);
+
 }
 a { 
     text-decoration: none;
@@ -86,12 +88,13 @@ a {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     align-self: flex-end;
-    line-height: 150%;
 }
 
 #logo h3 {
     padding: 0;
     color: black;
+    line-height: 1.5em !important;
+
 }
 
 .tabs {
@@ -130,7 +133,6 @@ a {
 }
 
 
-
 /* EXPERIENCE PAGE ------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -141,12 +143,12 @@ a {
     align-items: center;
     flex-direction: column;
     width: 100%; 
-    top: 20%;
+    top: 100px;
     color: black;
     font-family: "Montserrat", sans-serif;
-    background-color: rgba(255, 255, 255, 0.99);
     height: 200%;
     margin-bottom: 50px;
+    padding-top: 50px;
 
 }
 
@@ -165,8 +167,8 @@ a {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    background-color: rgba(12, 12, 12, 0.9);
-    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.80);
+    color: black;
     padding: 0px 100px;
     margin: 0px 0;
     border-radius: 10px;
@@ -180,13 +182,12 @@ a {
 }
 
 .expPara h5 { 
-    text-align: center;
+    width: 100%;
+    text-align: right;
     font-size: 1.5em;
-    font-style: oblique;
-    background-color: whitesmoke;
-    color: rgb(0, 64, 138);
+    background-color: rgba(0, 95, 119, 0.89);
+    color: rgb(255, 255, 255);
     padding-right: 20px;
-    border-radius: 10px;
 }
 
 .expInfo .Java {
@@ -198,13 +199,17 @@ a {
 }
 .expInfo .web {
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+.expInfo .web2 {
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
-.Java, .p3, .web,  h3 {
-    color:whitesmoke;
+.Java, .p3, .web, .web2,  h3 {
+    color:black;
     padding:10px 0px;
-
+    line-height: 2em;
 }
 
 .expInfo h4 {
