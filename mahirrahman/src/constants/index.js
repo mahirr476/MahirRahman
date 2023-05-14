@@ -51,7 +51,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Parasole",
+    title: "Parasole IT Consultant",
     icon: creator,
   },
   {
@@ -78,16 +78,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -97,10 +89,7 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
+  
   {
     name: "Three JS",
     icon: threejs,
@@ -113,63 +102,76 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "University of British Columbia",
+    company_name: "Kelowna, British Columbia",
     icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    iconBg: "#fff",
+    date: "March 2018 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Bachelor Science Undergraduate CS Major",
+      "Core foundational programming experienced using Java fundamentals",
+      "Creating applications and designs while specializing in courses of Data Structures/ Web programming/ Database Systems and management / Java Applications",
+      "Participating in code projects with peers and providing constructive feedback & support to other developers (check some out in projects).",
     ],
   },
+
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Web Design/Development",
+    company_name: "Freelance",
     icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    iconBg: "#FFF",
+    date: "Jan 2020 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Developing and maintaining web applications with experience using HTML, CSS, JavaScript, PHP and more recently integrating frameworks such as ReactJS.",
+      "Experienced in utilizing phpmyadmin database in order to host a database storage management system for web applications",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Car Rental Service",
+    company_name: "Ace Aligo, Kelowna, British Columbia",
     icon: meta,
-    iconBg: "#E6DEDD",
+    iconBg: "#FFF",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Car detailing and customer pick up and drop offs to the airport.",
+      "Experienced in high volume situations involving many customers and fulfilling client order requests",
+      "Branch IT/Computer Troubleshooting. Quick solutions to branch IT related issues.",
+      "Car maintenance and due diligance of paperwork",
+    ],
+  },
+
+  {
+    title: "Okanagan Grocery Artisan Breads",
+    company_name: "OK Grocery, Kelowna, British Columbia",
+    icon: tesla,
+    iconBg: "#FFF",
+    date: "Jan 2021 - March 2022",
+    points: [
+      "Managed various tasks such as dishwashing, packaging, weighing ingredients, proper store maintenance, organizing the workspace, and preparing various pastry/bread items for purchase.",
+      "Exceptional multitasking capability with previous objectives and simultaneously handled high-paced customer purchase transactions (storefront, online, phoned).",
+      "Worked with a team to maximize the productivity of the work environment. Tasks are dispersed amongst the team to fulfill multiple objectives within a given time frame.",
+      "Easily adapted to multiple roles and able to follow rules/changes on the go.",
+    ],
+  },
+
+  {
+    title: "Garment Manufacturing Auditing Intern",
+    company_name: "Knit Asia Ltd, Dhaka Bangladesh",
+    icon: tesla,
+    iconBg: "#FFF",
+    date: "May 2019 - July 2022",
+    points: [
+      "Gathered and analyzed garment production data including (but not limited to) yearly/monthly: production units, income generation, cost of production maintenance, cost of production resources, etc.",
+      "Gained thorough comprehension of Bangladesh's Accord & Alliance regulations for garment facilities.",
+      "Determined areas for improvement after auditing multiple facilities (including sibling company's facilities).",
+      "Created weekly/monthly reports, and supporting documentation for audit findings",
+      "Received stellar remarks for organized/detailed submissions with successful contributions towards the company.",
     ],
   },
 ];
